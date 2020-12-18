@@ -146,8 +146,11 @@ let total = ''
             info.innerHTML = "Password kuat"
             info.style.color = "#009975";
         }
-
+    }else{
+        info.innerHTML = "components aren't checked yet"
+        info.style.color = "#ff414d";
     }
+
     hasil.innerHTML = total; 
     output.innerHTML = slider.value;
 }
@@ -279,7 +282,13 @@ if(flagAlphabet || flagAngka || flagSymbol){
         info.style.color = "#009975";
     }
 
+}else{
+    info.innerHTML = "components aren't checked yet"
+    info.style.color = "#ff414d";
 }
+
+
+
 hasil.innerHTML = total; 
 output.innerHTML = slider.value;
 
