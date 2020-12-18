@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ENGSAP</h1>
+        </nav>
+    </header>
+    <main>
+        <div id="card">
+            <form>
+                <p id="judul">Password Generator</p>
+                <p id="subjudul">Make the strongest password you will ever have</p>
+                <p><span id="passwordacak"></span></p>
+                <p id="garisbawah"></p>
+                <p id="infokekuatan"></p>
+                <!-- <label id="klik" onclick="myFunction()"> Klik saya </label> -->
+                <p id="hitung">Length: <span id="result"></span> </p>
+               
+                <input type="range" min="1" max="30" class="slider" value="0" id="myRange">
+                
+                
+                <div id="jarak">
+                    <input type="checkbox" id="huruf" name="pilihan1" checked>
+                    <label for="pilihan1"> Huruf </label>
+                        
+                    <input type="checkbox" id="angka" name="pilihan2" checked>
+                    <label for="pilihan2"> Angka  </label>
+                       
+                    <input type="checkbox" id="symbol" name="pilihan3" checked>
+                    <label for="pilihan3"> Symbol  </label>
+                        
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- <footer>
+
+    </footer> -->
+    <script src="script.js"></script>
+</body>
+</html>

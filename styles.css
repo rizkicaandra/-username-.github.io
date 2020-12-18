@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav h1{
+    text-align: center;
+    font-size: 300%;
+    font-family: 'Luckiest Guy', cursive;;
+    color: whitesmoke;
+    background-color: #456268;
+    padding-top: 1.5rem;
+    /* padding-bottom: 0.5rem; */
+}
+
+body{
+    background-color: #e8e8e8;
+}
+
+main{
+    position: relative;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 3%;
+    min-height: 100%;
+    font-size: 2em;
+    color: #456268;
+}
+
+#card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+#judul{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#subjudul{
+    padding-bottom: 8rem;
+}
+
+
+#garisbawah{
+    width: 95%;
+    border: 2px solid #456268;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
+}
+
+#passwordacak{
+    color: rgba(128, 128, 128, 0.494);
+}
+
+#hitung{
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+}
+
+#myRange{
+    width: 96%;
+}
+
+.slider {
+ -webkit-appearance: none;
+ width: 100%;
+ height: 16px;
+ border-radius: 5px;
+ background: #456268;
+ outline: none;
+ opacity: 0.7;
+ -webkit-transition: .2s;
+ transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ff4646;
+  cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #ff4646;
+  cursor: pointer;
+}
+
+/* container untuk checkbox */
+#jarak{
+    display: block;
+    position: relative;
+    padding-left: 1%;
+    padding-top: 4rem;  
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+#jarak label{
+    margin-right: 2rem;
+}
+
+#infokekuatan{
+    margin-top: 1rem;
+}
+
+/* footer{
+    position: absolute;
+    margin-top: 1%;
+    background-color: #f05454;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 2%;
+    bottom: 0;
+    width: 100%;
+    height: 2rem; 
+    
+} */
