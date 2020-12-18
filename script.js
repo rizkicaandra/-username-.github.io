@@ -128,26 +128,26 @@ let total = ''
     }
 
    
+    if(flagAlphabet || flagAngka || flagSymbol){
+        if(output.innerHTML < 1){
+            hasil.style.color = "#ff414d";
+            info.innerHTML = "Belum ada info";
+            info.style.color = "#ff414d";
+        } else if (output.innerHTML > 0 && output.innerHTML < 8){
+            hasil.style.color = "#ff414d"
+            info.innerHTML = "Password lemah"
+            info.style.color = "#ff414d";
+        } else if (output.innerHTML >= 8 && output.innerHTML < 12){
+            hasil.style.color = "#fd8c04"
+            info.innerHTML = "Password cukup kuat"
+            info.style.color = "#fd8c04";
+        } else if (output.innerHTML >= 12){
+            hasil.style.color = "#009975"
+            info.innerHTML = "Password kuat"
+            info.style.color = "#009975";
+        }
 
-    if(output.innerHTML < 1){
-        hasil.style.color = "#ff414d";
-        info.innerHTML = "Belum ada info";
-        info.style.color = "#ff414d";
-    } else if (output.innerHTML > 0 && output.innerHTML < 8){
-        hasil.style.color = "#ff414d"
-        info.innerHTML = "Password lemah"
-        info.style.color = "#ff414d";
-    } else if (output.innerHTML >= 8 && output.innerHTML < 12){
-        hasil.style.color = "#fd8c04"
-        info.innerHTML = "Password cukup kuat"
-        info.style.color = "#fd8c04";
-    } else if (output.innerHTML >= 12){
-        hasil.style.color = "#009975"
-        info.innerHTML = "Password kuat"
-        info.style.color = "#009975";
     }
-
-
     hasil.innerHTML = total; 
     output.innerHTML = slider.value;
 }
@@ -256,9 +256,11 @@ for(let i = 0; i < slider.value; i++){
             total += angka[randomAngka]
         } 
     }
+
+   
 }
 
-
+if(flagAlphabet || flagAngka || flagSymbol){
     if(output.innerHTML < 1){
         hasil.style.color = "#ff414d";
         info.innerHTML = "Belum ada info";
@@ -277,6 +279,7 @@ for(let i = 0; i < slider.value; i++){
         info.style.color = "#009975";
     }
 
+}
 hasil.innerHTML = total; 
 output.innerHTML = slider.value;
 
