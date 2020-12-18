@@ -20,15 +20,15 @@
             <form>
                 <p id="judul">Password Generator</p>
                 <p id="subjudul">Make the strongest password you will ever have</p>
+                <h3 id="segarkan" onclick="refresh()" >CLICK ME TO REFRESH</h3>
                 <p><span id="passwordacak"></span></p>
                 <p id="garisbawah"></p>
                 <p id="infokekuatan"></p>
-                <!-- <label id="klik" onclick="myFunction()"> Klik saya </label> -->
                 <p id="hitung">Length: <span id="result"></span> </p>
+                <!-- <label id="klik" onclick="myFunction()"> Klik saya </label> -->
                
                 <input type="range" min="1" max="30" class="slider" value="8" id="myRange">
-                
-                
+
                 <div id="jarak">
                     <input type="checkbox" id="huruf" name="pilihan1" checked>
                     <label for="pilihan1"> Huruf </label>
@@ -38,7 +38,8 @@
                        
                     <input type="checkbox" id="symbol" name="pilihan3" checked>
                     <label for="pilihan3"> Symbol  </label>
-                        
+                    
+                    <label id="informasi">- you are able to uncheck components that you don't like-</label>
                 </div>
             </form>
         </div>

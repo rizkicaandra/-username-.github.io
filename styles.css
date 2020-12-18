@@ -117,6 +117,19 @@ main{
     margin-top: 1rem;
 }
 
+#segarkan{
+    padding-left: 82%;
+}
+
+#segarkan:hover{
+    color: #ff4646;
+    cursor: pointer;
+}
+
+#informasi{
+    font-size: 25px;
+}
+
 /* footer{
     position: absolute;
     margin-top: 1%;
